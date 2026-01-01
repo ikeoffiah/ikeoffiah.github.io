@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Chijideobi Ikeoffiah | Mobile & AI Engineer</title>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;600&family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg: #0b0f1a;
+      --card: #12172a;
+      --primary: #06d0c2;
+      --secondary: #8b9cff;
+      --text: #e6e9f0;
+      --muted: #9aa3b2;
+      --border: rgba(255,255,255,0.08);
+    }
+
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      font-family: 'Inter', system-ui, sans-serif;
+      background: radial-gradient(1200px 600px at 10% -10%, #13204a 0%, transparent 40%),
+                  radial-gradient(1000px 500px at 90% 10%, #062f3a 0%, transparent 40%),
+                  var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+    }
+
+    header {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 5rem 1.5rem 3rem;
+      display: grid;
+      gap: 1.5rem;
+    }
+
+    .badge {
+      display: inline-block;
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 0.8rem;
+      color: var(--primary);
+      background: rgba(6, 208, 194, 0.1);
+      padding: 0.35rem 0.6rem;
+      border-radius: 999px;
+      width: fit-content;
+      border: 1px solid rgba(6,208,194,0.25);
+    }
+
+    h1 {
+      font-size: clamp(2.4rem, 5vw, 3.6rem);
+      line-height: 1.1;
+      margin: 0;
+    }
+
+    h1 span {
+      background: linear-gradient(90deg, var(--primary), var(--secondary));
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    .subtitle {
+      max-width: 700px;
+      color: var(--muted);
+      font-size: 1.05rem;
+    }
+
+    nav {
+      display: flex;
+      gap: 1.2rem;
+      flex-wrap: wrap;
+      margin-top: 1rem;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: var(--text);
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 0.9rem;
+      padding: 0.55rem 0.9rem;
+      border-radius: 8px;
+      border: 1px solid var(--border);
+      background: linear-gradient(180deg, rgba(255,255,255,0.04), rgba(255,255,255,0));
+      transition: transform 0.15s ease, border-color 0.15s ease;
+    }
+
+    nav a:hover {
+      transform: translateY(-2px);
+      border-color: var(--primary);
+    }
+
+    main {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 2rem 1.5rem 5rem;
+      display: grid;
+      gap: 3rem;
+    }
+
+    section h2 {
+      font-size: 1.8rem;
+      margin-bottom: 1.2rem;
+      font-family: 'JetBrains Mono', monospace;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 1.5rem;
+    }
+
+    .card {
+      background: linear-gradient(180deg, rgba(255,255,255,0.03), rgba(255,255,255,0));
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      padding: 1.4rem;
+      transition: transform 0.2s ease, border-color 0.2s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-4px);
+      border-color: rgba(6,208,194,0.5);
+    }
+
+    .card h3 {
+      margin-top: 0;
+      font-size: 1.1rem;
+    }
+
+    .tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.4rem;
+      margin-top: 0.8rem;
+    }
+
+    .tag {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 0.7rem;
+      padding: 0.25rem 0.45rem;
+      border-radius: 6px;
+      background: rgba(139,156,255,0.12);
+      color: var(--secondary);
+      border: 1px solid rgba(139,156,255,0.25);
+    }
+
+    footer {
+      border-top: 1px solid var(--border);
+      padding: 2rem 1.5rem;
+      text-align: center;
+      color: var(--muted);
+      font-size: 0.85rem;
+    }
+
+    .terminal {
+      font-family: 'JetBrains Mono', monospace;
+      background: #05070f;
+      border-radius: 12px;
+      padding: 1.2rem;
+      border: 1px solid var(--border);
+      color: #a9b1ff;
+    }
+
+    .terminal span { color: var(--primary); }
+  </style>
+</head>
+<body>
+
+  <header>
+    <span class="badge">Flutter • Mobile • AI • Open Source</span>
+    <h1>Hi, I'm <span>Chijideobi Ikeoffiah</span></h1>
+    <p class="subtitle">
+      Mobile engineer focused on Flutter, system-level integrations, and on-device AI.
+      I build performant apps, experiment with LLMs, and ship production-ready software.
+    </p>
+    <nav>
+      <a href="#projects">Projects</a>
+      <a href="#skills">Skills</a>
+      <a href="#now">Now</a>
+      <a href="https://github.com/ikeoffiah" target="_blank">GitHub ↗</a>
+    </nav>
+  </header>
+
+  <main>
+    <section id="projects">
+      <h2>Selected Projects</h2>
+      <div class="grid">
+        <div class="card">
+          <h3>sms_notification_listener</h3>
+          <p>Flutter plugin for listening to SMS and notification events with platform-level integrations.</p>
+          <div class="tags">
+            <span class="tag">Flutter</span>
+            <span class="tag">Android</span>
+            <span class="tag">Plugin</span>
+          </div>
+        </div>
+
+        <div class="card">
+          <h3>animated_circular_progress_bar</h3>
+          <p>A highly customizable and smooth animated circular progress bar Flutter package.</p>
+          <div class="tags">
+            <span class="tag">Flutter</span>
+            <span class="tag">UI</span>
+            <span class="tag">Animation</span>
+            <span class="tag">Package</span>
+          </div>
+        </div>
+
+        <div class="card">
+          <h3>Owjar.co</h3>
+          <p>A desktop application that lets users edit videos by simply prompting. Built with a native desktop UI and AI-powered video workflows.</p>
+          <div class="tags">
+            <span class="tag">Python</span>
+            <span class="tag">PyQt6</span>
+            <span class="tag">Desktop</span>
+            <span class="tag">AI</span>
+            <span class="tag">Video</span>
+          </div>
+        </div>
+
+        <div class="card">
+          <h3>On-device LLM Experiments</h3>
+          <p>Running quantized models (GGUF, Q2_K) locally on mobile using efficient runtimes.</p>
+          <div class="tags">
+            <span class="tag">AI</span>
+            <span class="tag">LLM</span>
+            <span class="tag">Mobile</span>
+          </div>
+        </div>
+
+        <div class="card">
+          <h3>Production Flutter Apps</h3>
+          <p>End-to-end Flutter apps with clean architecture, Riverpod, and robust networking.</p>
+          <div class="tags">
+            <span class="tag">Flutter</span>
+            <span class="tag">Riverpod</span>
+            <span class="tag">REST</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="skills">
+      <h2>Core Stack</h2>
+      <div class="grid">
+        <div class="card">
+          <h3>Mobile & Frontend</h3>
+          <p>Building fast, scalable user experiences across mobile and web.</p>
+          <div class="tags">
+            <span class="tag">Flutter</span>
+            <span class="tag">Dart</span>
+            <span class="tag">ReactJS</span>
+            <span class="tag">TypeScript</span>
+          </div>
+        </div>
+
+        <div class="card">
+          <h3>Backend & APIs</h3>
+          <p>Designing robust APIs and backend systems with clean architecture.</p>
+          <div class="tags">
+            <span class="tag">Python</span>
+            <span class="tag">Django</span>
+            <span class="tag">FastAPI</span>
+            <span class="tag">Node.js</span>
+            <span class="tag">Express.js</span>
+          </div>
+        </div>
+
+        <div class="card">
+          <h3>AI & Systems</h3>
+          <p>On-device AI, model optimization, and system-level integrations.</p>
+          <div class="tags">
+            <span class="tag">LLMs</span>
+            <span class="tag">GGUF</span>
+            <span class="tag">Quantization</span>
+            <span class="tag">Mobile AI</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="now">
+      <h2>What I'm Doing Now</h2>
+      <div class="card">
+        <p>
+          Exploring efficient mobile AI deployments, building reusable Flutter packages,
+          and refining developer experience through better tooling and architecture.
+        </p>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    © <script>document.write(new Date().getFullYear())</script> Chijideobi Ikeoffiah · Built with Love and Care ·
+  </footer>
+
+</body>
+</html>
